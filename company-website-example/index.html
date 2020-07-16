@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/0872db89e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ABB Grup</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bellefair' rel='stylesheet'>
+</head>
+
+<body >
+
+  <a class="navbar-brand" href="index.html" style="position: absolute; left: 1%; top: 1%; background: transparent;">
+    <img src="images/logo.png" class="logo" alt="ANASAYFA" title="ABB">
+  </a>
+
+  <button type="button" id="index-toggler" style="position: absolute; z-index: 2; right:12%; top: 4%;  border: none; background: transparent;">
+    <div class="menu-toggle">
+      <div id="menu-toggle-1"></div>
+      <div id="menu-toggle-2"></div>
+      <div id="menu-toggle-3"></div>
+    </div>
+  </button>
+
+  <ul class="index-ul unclicked">
+	<li class="nav-item" >
+      <a class="nav-link text-dark" href="kurumsal.html">Kurumsal</a>
+    </li>
+
+	<li class="nav-item dropdown">
+	  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown">
+		Hizmetlerimiz 
+	  </a>
+	  <div class="dropdown-menu">
+		<a class="dropdown-item" href="guvenlik.html">Güvenlik</a>
+		<a class="dropdown-item" href="temizlik.html">Temizlik</a>
+		<a class="dropdown-item" href="gıda.html">Gıda</a>
+		<a class="dropdown-item" href="insankaynakları.html">İnsan Kaynakları</a>
+	  </div>
+	</li>
+
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="referanslarimiz.html">Referanslar</a>
+    </li>
+
+    <li class="nav-item"> <a class="nav-link text-dark" href="iletisim.html">İletişim</a>
+    </li>
+    
+  </ul>
+
+  
+
+</nav>
+
+<img src="images/index11.jpg" width="100%" height="auto" style="max-height: 800px;" >
+
+
+<div id="index-background">
+
+  <div class="row" id="index-row-1">
+
+    <p class="index-text-1">güvenlik risk analizi raporlaması, fiziki ve elektronik güvenlik hizmetleri, acil durum yönetimi, iş sağlıgı ve güvenliği,
+    güvenlik ekipmanlarının ve sistemlerinin kontrol edilmesi,teknik inceleme, yangın güvenliği ve yangınla mücadele, denetim ve raporlama</p>
+
+    <p class="index-text-2">yemek pişirme, servis ve sonrası, hazır mutfağımızdan yemek nakliyesi ve servis,
+    gazlı paketleme ve sıcak servis, restoran hizmeti, kafeterya hizmeti,cafe bistro hizmeti, düğün, kokteyl, organizasyon</p>
+
+    <div class="col-lg-6 mb-1" style="position: relative">
+    	<a class="index-header-1" href="guvenlik.html">Güvenlik</a>
+      <a href="guvenlik.html" id="index-guvenlik"><img src="images/guvenlik9.jpg" width="100%"></a>
+    </div>
+
+    <div class="col-lg-6" style="position: relative">
+      <a class="index-header-2" href="guvenlik.html">Gıda</a>
+      <a href="gıda.html" id="index-gıda"><img src="images/human2.jpg" width="100%"></a>
+    </div>
+
+  </div>
+
+  <div class="row" style="padding-top: 140px">
+  
+    <p class="index-text-3">yönetici, müdür, müşreti hizmetleri, ofis personelleri, muhasebe kasiyer, reyon sorumluları, tezgahtar, mutfak personeli, servis   personelleri, depo sorumlusu, kalorifer, ateşçi, bahçıvan, resepsiyonist</p>
+
+    <p class="index-text-4">genel temizlik, çevre temizliği, dış cephe temizliği, haşereyle mücadele, inşaat sonrası temizlik, mobil temizlik, karla mücadele, atık yönetimi</p>
+
+    <div class="col-lg-6 mb-1" style="position: relative">
+      <a class="index-header-3" href="insankaynakları.html">İnsan Kaynakları</a>
+      <a href="insankaynakları.html" id="index-insan"><img src="images/lecture4.jpg" width="100%"></a>
+    </div>
+  
+    <div class="col-lg-6" style="position: relative">
+   	  <a class="index-header-4" href="temizlik.html">Temizlik</a>
+      <a href="temizlik.html" id="index-temizlik"><img src="images/temizlik3.jpg" width="100%"></a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="row border" style="overflow: hidden">
+  <div class="col col-lg-4" style="text-align: center">
+ 
+  <a href="kurumsal.html"><div class="index-div">
+  <img src="images/kurumsal.jpg" class="index-img">
+  <i class="fas fa-globe" id="index-globe"></i><br>Kurumsal</div></a>
+
+
+  <a href="referanslarimiz.html"><div class="index-div" style="color: #FFFFFF"><img src="images/references.png" class="index-img" >
+  <i class="fas fa-archive" id="index-archive"></i><br>Referanslar</div></a>
+
+  <a href="iletisim.html"><div class="index-div" id="index-iletisim" style="">
+  <img src="images/contact.jpg" class="index-img">
+  <i class="fas fa-phone" id="index-phone"></i><br>İletişim</div></a>
+
+</div>
+
+  <div class="col col-lg-8">
+  	<img src="images/home2.jpg" style="max-height: 800px; width: 100%">
+  </div>
+  
+</div> 
+
+
+<footer class="page-footer font-small bg-dark pb-0">
+  <div class="row"> 
+ 
+  <div class="col-lg-6">
+  <i class="fa fa-map-marker text-white"> Eti Mahallesi, Gazi Mustafa Kemal Blv.<br> 72/9, 06570 Çankaya/Ankara</i><br><br>
+  <i class="fa fa-phone text-white">(0312) 231 81 83</i><br><br>
+  <i class="fa fa-envelope text-white">bugrabesen@gmail.com</i><br><br>
+  </div>
+
+  <div class="col-lg-6">
+    <p class="sign-safak">designed by 
+    <a href="https://www.linkedin.com/in/safak-kurdoglu-57a9731b1/">Safak</a></p>
+  </div>
+  </div>
+</footer>
+
+<script src="scpt.js"></script>
+</body>
+</html>

@@ -1,0 +1,880 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background: white;
+	
+}
+
+.navbar {
+	background: white;
+    box-shadow: 1px 1px 3px #AAAAAA;
+
+	-webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+#nav-head {
+	width:100%;
+	height:30px; 
+	position:absolute; 
+    z-index: -1;
+    background: linear-gradient(to bottom, #5B0000, #921818);
+    top:0; 
+    left:0;
+}
+
+.navbar-brand {
+	margin-left: 12%;
+	width: 90px;
+	position: relative;
+    top: -8px;
+	background: white;
+	text-align: center;
+    background: white;
+    
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+
+}
+
+#index-toggler:focus {
+    outline: none;
+}
+
+#index-toggler:hover {
+    opacity: 0.8;
+}
+
+.index-ul {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    position: absolute;
+    z-index: 1;
+    background: #F9FBFD;
+
+}
+
+.index-ul.unclicked {
+    display: none;
+
+    top: -10%;
+    left: 25%;
+    right: 18%;
+
+}
+
+.index-ul.clicked {
+    top: 2%;
+    left: 30%;
+    right: 22%;
+
+}
+
+.index-ul li {
+    display: static;
+    margin-left: 5%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-top: 2px solid #F0F8FF;
+    border-bottom: 2px solid #F0F8FF;
+
+}
+
+.index-ul li:hover {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+
+
+
+.img-abs {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+#my-index-row {
+    position: relative;
+	margin:0;
+	margin-bottom: 100px;
+}
+
+#my-index-row p,
+#my-index-row a {
+    position: absolute;
+}
+
+
+
+#index-background {
+    background-image: url('images/index6.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%; 
+    position: relative; 
+    overflow: hidden
+}
+
+.navbar-nav {
+    font-weight: 500;
+    font-family: 'Actor';
+    font-size: 22px;
+
+}
+
+.navbar-nav li {
+	margin-left: 8%;
+}
+
+
+.logo {
+	width: 80px;
+	height: 80px;
+	border-radius:50%;
+    
+    position: relative;
+
+
+}
+
+.navbar-toggler {
+	border: none;
+	-webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    position: relative;
+    top: 10px;
+}
+
+.navbar-toggler:focus {
+	outline: none;
+}
+
+
+
+
+.menu-toggle {
+	width: 55px;
+}
+
+.menu-toggle div{
+    background-color: #666;
+    border-radius: 25px;
+    box-shadow: 0px 3px 13px rgba(0,0,0,.3);
+    height: 7px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.13,.24,.35,1.64);
+}
+
+#menu-toggle-1,
+#menu-toggle-2 {
+	margin-bottom: 7px;
+}
+
+.menu-toggle.active #menu-toggle-1{
+	box-shadow: 0px 3px 13px rgba(0,0,0,.4);
+    transform: translate(0, 14px) rotate(45deg);
+}
+
+.menu-toggle.active #menu-toggle-2{
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateX(-55px);
+}
+
+.menu-toggle.active #menu-toggle-3{
+    box-shadow: 0px 3px 13px rgba(0,0,0,.4);
+    transform: translate(0,-14px) rotate(-45deg);
+}
+
+/*slide effect for small screen */
+.nav-item-slide {
+    position: relative;
+    top: -20px;
+}
+
+.nav-item-slide2 {
+	top: -5px;
+}
+
+#navbarNav {
+	text-align: center;
+    background: white;
+	opacity: 1;
+	margin-bottom:-30px
+}
+
+#index-row-1 {
+    padding-top: 140px;
+    position: relative
+}
+
+#index-guvenlik {
+    position: relative;
+
+}
+
+#index-guvenlik img{
+    border: 2px solid transparent;
+
+}
+#index-guvenlik:hover img{
+    border: 2px solid lightblue;
+    
+}
+
+#index-guvenlik:hover {
+    top: -1%;
+}
+
+#index-insan {
+    position: relative;
+
+}
+
+#index-insan img{
+    border: 2px solid transparent;
+
+}
+#index-insan:hover img{
+    border: 2px solid lightblue;
+    
+}
+
+#index-insan:hover {
+    top: -1%;
+}
+
+#index-temizlik {
+    position: relative;
+
+}
+
+#index-temizlik img{
+    border: 2px solid transparent;
+
+}
+#index-temizlik:hover img{
+    border: 2px solid lightblue;
+    
+}
+
+#index-temizlik:hover {
+    top: -1%;
+}
+
+#index-gıda {
+    position: relative;
+
+}
+
+#index-gıda img{
+    border: 2px solid transparent;
+
+}
+#index-gıda:hover img{
+    border: 2px solid lightblue;
+    
+}
+
+#index-gıda:hover {
+    top: -1%;
+}
+
+.index-header-1 {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 8%;
+    font-size: 42px;
+    opacity: 0;
+    color: white;
+    transition: all 0.4s;
+}
+
+.index-text-1 {
+    position: absolute;
+    font-size: 18px;
+    top: 0%;
+    left: -200%;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.index-header-1.hovered {
+    opacity: 1;
+}
+
+.index-text-1.hovered {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    right: 2%;
+    opacity: 1;
+}
+
+.index-header-2 {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 8%;
+    font-size: 42px;
+    opacity: 0;
+    color: black;
+    transition: all 0.4s;
+}
+
+.index-text-2 {
+    position: absolute;
+    font-size: 18px;
+    top: 0%;
+    right: -200%;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.index-header-2.hovered {
+    opacity: 1;
+}
+
+.index-text-2.hovered {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    left: 2%;
+    opacity: 1;
+}
+
+
+.index-header-3 {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 8%;
+    font-size: 42px;
+    opacity: 0;
+    color: #AABBBB;
+    transition: all 0.4s;
+}
+
+.index-text-3 {
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    left: -200%;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.index-header-3.hovered {
+    opacity: 1;
+}
+
+.index-text-3.hovered {
+    position: absolute;
+    top: 52%;
+    left: 2%;
+    right: 2%;
+    opacity: 1;
+}
+
+.index-header-4 {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 8%;
+    font-size: 42px;
+    opacity: 0;
+    color: black;
+    transition: all 0.4s;
+}
+
+.index-text-4 {
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    right: -200%;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.index-header-4.hovered {
+    opacity: 1;
+}
+
+.index-text-4.hovered {
+    position: absolute;
+    top: 52%;
+    left: 2%;
+    right: 2%;
+    opacity: 1;
+}
+
+.index-img {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    z-index: -1; 
+    left:0; 
+    top:0
+}
+
+.index-div {
+    overflow: hidden; 
+    width: 60%; 
+    height: 20%; 
+    font-size: 18px; 
+    margin-left: 25%; 
+    margin-top: 10%; 
+    position: relative
+}
+
+#index-iletisim {
+    color: #11EEFF;
+}
+
+#index-globe {
+    font-size: 20px; 
+    color: #445566
+}
+
+#index-archive {
+    font-size: 20px;
+    color: white
+}
+
+#index-phone {
+    font-size: 20px; 
+    color: #333333
+}
+
+.scrolled {
+    opacity: 0.7;
+}
+
+#home {
+	max-width: 800px;
+	max-height: 800px;
+
+}
+
+.container-fluid {
+
+	text-align: center;
+	padding-top: 20px;
+
+}
+
+#index-row {
+    padding-top: 30px;
+}
+
+#row-head {
+	font-family: 'Balthazar';
+	font-weight: 500;
+	font-size: 35px;
+	color: #555555;
+}
+
+#index-row img {
+	max-width: 250px;
+	height: 270px;
+	padding-top: 20px;
+}
+
+
+
+.carousel-inner img {
+    max-height: 900px;
+}
+
+.middle-header {
+	text-align: center;
+}
+
+
+.col-sm {
+	text-align: center;
+}
+
+
+
+.page-footer {
+    padding: 20px 20% 10px 20%;
+	font-family: 'Bellefair';
+	font-size: 15px;
+
+
+}
+
+ .sign-safak {
+       margin-top: 10px;
+        border-top: 1px solid darkblue; 
+        text-align: center; 
+        color: #BBCCCC;
+        font-size: 18px
+    }
+
+    .sign-safak a {
+        color: #3444B9;
+    }
+
+    .sign-safak a:hover {
+        color: #4466D2;
+    }
+
+/*Kurumsal page */
+
+
+#kurumsal-cont {
+    right: 0;
+    top: 0;
+}
+
+#icerik-bilgi {
+	text-align: center;
+    font-family: "Biryani";
+    font-size: 23px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+
+
+}
+
+/*referanslarimiz page */
+
+#ref-col {
+
+    
+}
+
+.row {
+	justify-content: center;
+}
+
+#ref-col img{
+	width: 300px;
+	height: 230px;
+
+}
+
+/* galeri */
+
+#galeri-col img {
+	width: 280px;
+	height: 220px;
+}
+
+#galeri-col .clicked {
+
+}
+
+.hide {
+    display: none;
+}
+
+body.clicked{
+	background: lightgrey;
+	text-align: center;
+}
+
+#galeri-col img.clicked{
+	width: 100%;
+	height: 100%;
+
+}
+
+/* for positioning of images of galeri */
+.left, .exit, .right {
+	position: absolute;
+}
+
+.fa.fa-window-close{
+	position: relative;
+	z-index: 111;
+	top: 5px;
+	right: 0;
+	font-size: 30px;
+	color: #424955;
+}
+
+.fa.fa-arrow-left {
+	font-size: 30px;
+	color: rgb(5,7,10,1);
+	position: absolute;
+	left: 5%;
+	top: 55%;
+	cursor: pointer;
+}
+
+.fa.fa-arrow-right {
+	font-size: 30px;
+	color: rgb(5,7,10,1);
+	position: absolute;
+	right: 5%;
+	top: 55%;
+	cursor: pointer;
+}
+
+.fa.fa-window-close:hover {
+	color: #12151A;
+}
+
+@media screen and (min-width: 576px) {
+	 #my-index-row a {
+    	font-size: 21px;
+    }
+    #my-index-row p {
+    	font-size: 12px;
+    }
+
+    .index-header-3 {
+        bottom: 14%;
+    }
+
+    .index-header-4 {
+        bottom: 17%;
+    }
+
+    .page-footer {
+        margin-top: 30px;
+    }
+
+
+}
+
+
+
+@media screen  and (min-width: 720px) {
+	#my-index-row a {
+    	font-size: 22px;
+    }
+    #my-index-row p {
+    	font-size: 14px;
+    }
+
+    #direction-1 {
+    	left: 44%;
+    }
+
+    #direction-2 {
+	    left: 48%;
+    }
+ 
+    #direction-3 {
+	    left: 52%;
+    } 
+
+    #direction-4 {
+	    left: 56%;
+    } 
+
+    .index-header-3 {
+        bottom: 13%;
+    }
+  
+    .index-header-4 {
+        bottom: 17%;
+    }
+
+    .page-footer {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+	#index-row img {
+		max-width: 250px;
+	}
+
+	#galeri-col img {
+	width: 340px;
+	height: 280px;
+    }
+
+
+    #my-index-row a {
+    	font-size: 24px;
+    }
+    #my-index-row p {
+    	font-size: 15px;
+    }
+
+    .index-header-3 {
+        bottom: 12%;
+    }
+
+    .index-header-4 {
+        bottom: 14%;
+    }
+
+    .sign-safak {
+ 
+        margin-top: 70px; 
+
+    }
+
+    .page-footer {
+        margin-top: 10px;
+    }
+
+    .index-ul li {
+        display: inline-block;
+        margin-left: 5%;
+
+}
+    #index-row-1 {
+        padding-top: 100px;
+        position: relative
+}
+
+    .index-text-1 {
+        font-size: 22px;
+
+
+    }
+
+    .index-text-2 {
+        font-size: 22px;
+
+
+    }
+    .index-text-3 {
+        font-size: 22px;
+
+
+    }
+    .index-text-4 {
+        font-size: 22px;
+
+
+    }
+    #index-globe {
+        font-size: 35px; 
+        color: #445566
+    }
+
+    #index-archive {
+        font-size: 35px;
+        color: white
+    }
+
+    #index-phone {
+        font-size: 35px; 
+        color: #BBCCDD;
+    }
+
+    #index-iletisim {
+        color: #000000; 
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+	.navbar-nav {
+		margin-left: 30%;
+	}
+
+	.navbar-brand {
+    	margin-left: 15%;
+    }
+
+    #index-row img {
+    	max-width: 300px;
+
+    }
+
+
+    #my-index-row a {
+    	font-size: 28px;
+    }
+    #my-index-row p {
+    	font-size: 18px;
+    }
+    .index-header-3 {
+        bottom: 11%;
+    }
+ 
+    .index-header-4 {
+        bottom: 15%;
+    }
+
+    .page-footer {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    .navbar-nav {
+        margin-left: 45%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .page-footer {
+    	margin-top: 60px;
+    }
+
+    #my-index-row a {
+    	font-size: 20px;
+    	
+    }
+
+    #my-index-row p {
+    	font-size: 11px;
+    }
+
+}
+
+
+
+
+/*  iletisim */
+
+#iletisim-cont {
+	height: 80%;
+}
+
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+	background: rgba(255,255,255,0.75);	
+}
